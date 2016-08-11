@@ -1,0 +1,7 @@
+<div class='album-display'>
+  <input *ngIf="album.inCart" type="checkbox" checked (click)="toCart(false)">
+  <input *ngIf="!album.inCart" type="checkbox" (click)="toCart(true)">
+  <h3>Title: {{album.name}}</h3>
+  <h4>Artist: {{album.artist}}</h4>
+  <h4>Price: {{album.price}}</h4>
+</div>
